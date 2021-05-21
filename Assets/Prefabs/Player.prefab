@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 725249645}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -250,10 +250,10 @@ MonoBehaviour:
   speed: 2500
   armor: 0
   rollSpeed: 7000
-  rollTime: 0.25
+  rollTime: 0.35
   rollCooldown: 1
-  attackTime: 2
-  attackCooldown: 5
+  attackTime: 0.5
+  attackCooldown: 0.1
   damage: 0
   healthDisplay: {fileID: 0}
   weapon: {fileID: 1105818922}

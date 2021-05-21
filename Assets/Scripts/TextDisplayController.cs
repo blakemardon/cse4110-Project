@@ -15,6 +15,7 @@ public class TextDisplayController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("started");
         TextDisplayController.textDisplay = this;
 
         for(int i = 0; i < this.transform.childCount; i++){
@@ -49,8 +50,9 @@ public class TextDisplayController : MonoBehaviour
     }
 
     public static void DisplayText(string text){
-        displayStrings.Add(text);
-        textDisplay.setChildren(true);
+        List<string> temp = new List<string>();
+        temp.Add(text);
+        DisplayText(temp);
     }
 
     public static void DisplayText(List<string> text)

@@ -18,6 +18,7 @@ public class TextDisplayer : MonoBehaviour
     {
         if(playerIn){
             if(Input.GetButtonDown("Interact")){
+                Debug.Log("test");
                 TextDisplayController.DisplayText(diolouge);
             }
         }

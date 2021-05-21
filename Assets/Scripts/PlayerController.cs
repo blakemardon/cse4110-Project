@@ -135,4 +135,12 @@ public class PlayerController : MonoBehaviour
             stateTimer = 0;
         }
     }
+
+    void OnCollisionEnter2D(Collider2D collider){
+        Debug.Log("hit");
+        if(collider.gameObject.tag == "Enemy"){
+            health -= 2;
+            healthDisplayController.UpdateHealth(health);
+        }
+    }
 }
